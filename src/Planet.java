@@ -1,5 +1,12 @@
+/**
+ * Name: Viral
+ * Modified: February 23, 2015
+ * Description: Abstract class which has all the private properties, constructor and methods
+ */
+//abstract class
 public abstract class Planet {
 
+	//private properties
 	private double diameter;
 	private double mass;
 	private int moonCount;
@@ -8,6 +15,7 @@ public abstract class Planet {
 	private int ringCount;
 	private double rotationPeriod;
 
+	//parameterized constructor
 	public Planet(double diameter, double mass, String name) {
 		super();
 		this.diameter = diameter;
@@ -59,10 +67,9 @@ public abstract class Planet {
 		return name;
 	}
 
+	//override method to display properties to console
 	@Override
 	public String toString() {
-		return "Planet [diameter=" + diameter + ", mass=" + mass + ", name="
-				+ name + "]";
+		return "Planet Properties: \nName: " + name + " \nDiameter: " + diameter + " \nMass: "+ mass;
 	}
-
 }
